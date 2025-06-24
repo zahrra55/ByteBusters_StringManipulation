@@ -268,10 +268,10 @@
             string str = Console.ReadLine();
             int length = str.Length;
             // Split the string into parts
-    string[] parts = str.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            string[] parts = str.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-    // Convert to integers
-    int[] nums = Array.ConvertAll(parts, int.Parse);
+            // Convert to integers
+            int[] nums = Array.ConvertAll(parts, int.Parse);
 
 
             Console.WriteLine($"Maximum and minimum number of the said string: {nums.Max()}, {nums.Min()}");
