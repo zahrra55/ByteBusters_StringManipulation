@@ -262,11 +262,12 @@
         Maximum and minimum number of the said string: 9, 0
         Original string of numbers: -2 -1 0 4 10
         Maximum and minimum number of the said string: 10, -2*/
-        static void MaxMinFromSrting() // WRONGGG
+        static void MaxMinFromSrting()
         {
             Console.WriteLine("Original string of numbers: ");
             string str = Console.ReadLine();
             int length = str.Length;
+
             // Split the string into parts
             string[] parts = str.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
