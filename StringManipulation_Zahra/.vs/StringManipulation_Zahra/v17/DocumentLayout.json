@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Problems_Solver_Bootcamp\\VS_projects\\StringManipulation_Zahra\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\zahrra55\\ByteBusters_StringManipulation\\StringManipulation_Zahra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B24261B-09A0-4B1C-BC8A-E7E84B212D66}|StringManipulation_Zahra.csproj|e:\\problems_solver_bootcamp\\vs_projects\\stringmanipulation_zahra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B24261B-09A0-4B1C-BC8A-E7E84B212D66}|StringManipulation_Zahra.csproj|c:\\users\\hp\\source\\repos\\zahrra55\\bytebusters_stringmanipulation\\stringmanipulation_zahra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B24261B-09A0-4B1C-BC8A-E7E84B212D66}|StringManipulation_Zahra.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Problems_Solver_Bootcamp\\VS_projects\\StringManipulation_Zahra\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\zahrra55\\ByteBusters_StringManipulation\\StringManipulation_Zahra\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\Problems_Solver_Bootcamp\\VS_projects\\StringManipulation_Zahra\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\zahrra55\\ByteBusters_StringManipulation\\StringManipulation_Zahra\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAPsAAAAAAAAAAAAkwP4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABcBAAAAAAAAAAAcwCABAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T12:20:22.573Z",
               "EditorCaption": ""

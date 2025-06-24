@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Problems_Solver_Bootcamp\\VS_projects\\StringManipulation_Zahra\\StringManipulation_Zahra.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\zahrra55\\ByteBusters_StringManipulation\\StringManipulation_Zahra\\StringManipulation_Zahra.csproj",
       "projectName": "StringManipulation_Zahra",
-      "projectPath": "E:\\Problems_Solver_Bootcamp\\VS_projects\\StringManipulation_Zahra\\StringManipulation_Zahra.csproj",
+      "projectPath": "C:\\Users\\HP\\source\\repos\\zahrra55\\ByteBusters_StringManipulation\\StringManipulation_Zahra\\StringManipulation_Zahra.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "E:\\Problems_Solver_Bootcamp\\VS_projects\\StringManipulation_Zahra\\obj\\",
+      "outputPath": "C:\\Users\\HP\\source\\repos\\zahrra55\\ByteBusters_StringManipulation\\StringManipulation_Zahra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Visual studio\\visual studio tools\\visual studio shared components\\NuGetPackages"

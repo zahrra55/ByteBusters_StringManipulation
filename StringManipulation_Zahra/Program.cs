@@ -267,12 +267,13 @@
             Console.WriteLine("Original string of numbers: ");
             string str = Console.ReadLine();
             int length = str.Length;
-            int[] nums = {};
-            for (int i = 0; i < length; i++)
-            {
-                if (str[i] != ' ')
-                    nums[i] = Convert.ToInt32(str[i]);
-            } 
+            // Split the string into parts
+    string[] parts = str.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+    // Convert to integers
+    int[] nums = Array.ConvertAll(parts, int.Parse);
+
+
             Console.WriteLine($"Maximum and minimum number of the said string: {nums.Max()}, {nums.Min()}");
         }
         static void Main(string[] args)
