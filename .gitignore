@@ -1,9 +1,3 @@
-
-.vs/
-bin/
-obj/
-*.user
-*.suo
-*.cache 
-*.log
-*.vspscc
+*
+!StringManipulation_Zahra/
+!StringManipulation_Zahra/Program.cs

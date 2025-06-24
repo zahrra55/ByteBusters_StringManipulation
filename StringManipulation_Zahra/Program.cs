@@ -277,13 +277,42 @@
 
             Console.WriteLine($"Maximum and minimum number of the said string: {nums.Max()}, {nums.Min()}");
         }
+
+        /*39. Write a C# Sharp program to find the century of a given year.
+        Sample Data:
+        (1435) -> "15th century"
+        ----
+        To solve this task I'll take the year as an input from the user then i'll take the first two digits
+        as a substring then i'll convert it to an integer to add 1 to find then print the centery of the given year.
+         */
+        static void CenturyOfYear()
+        {
+            Console.Write("Enter the year: ");
+            string year = Console.ReadLine();
+
+            // Take the first two digits
+            string subYear = year.Substring(0, 2);
+            // Convert them to int and add 1 to it 
+            int centery = int.Parse(subYear) + 1;
+            
+            // Print the result, if it ends with 1 add st, 2 nd, 3 rd else print th
+            if (centery % 10 == 1)
+                Console.WriteLine($"({year})-> \"{centery}st century\"");
+            else if (centery % 10 == 2)
+                Console.WriteLine($"({year})-> \"{centery}nd century\"");
+            else if (centery % 10 == 3)
+                Console.WriteLine($"({year})-> \"{centery}rd century\"");
+            else
+                Console.WriteLine($"({year})-> \"{centery}th century\"");
+        }
         static void Main(string[] args)
         {
             //stringCopy();
             //isSubstring();
             while (true)
             {
-                MaxMinFromSrting();
+                CenturyOfYear();
+                //MaxMinFromSrting();
                 //StringMiddleCharacter();
                 //ReverseCase();
                 //ReverseStringUpper();
