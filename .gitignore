@@ -1,9 +1,9 @@
 
-".vs/" 
-"bin/" 
-"obj/" 
-"*.user" 
-"*.suo" 
-"*.cache" 
-"*.log" 
-"*.vspscc" 
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache 
+*.log
+*.vspscc
