@@ -6,7 +6,7 @@ public class Program
 
 //Q1
 /*
-حسب فهمي للسؤال يريد اذا نتيجة المقارنة متساوية نثبت ذلك 
+حسب فهمي للسؤال يريد اذا نتيجة المقارنة متساوية نثبت ذلك طبعت نتيجة المقارنتين فقط 
 */
 static void Demonstrate()
 {
@@ -85,6 +85,9 @@ static void Demonstrate()
         Console.WriteLine(Object.ReferenceEquals(str1, str2));
     }
 //Q15
+/*
+قارنت اخر حرف مع النقطة 
+*/
     static void Endsperiod()
     { 
         string str1 = "Actions speak louder than words";
@@ -184,6 +187,31 @@ foreach (int n in nums)
     
 }Console.WriteLine(minimal+" "+max);
 }
+//25
+/*
+سويت عداد لكي يحسبب عدد الاحرف المتكررة ثم شرط اذا العداد اكبر من واحد يعني توجد احرف متكررة
+*/
+    static void Isograms()
+{
+        string str1 = "JavaScript";
+        bool n = false;
+        int contr=0;
+        for(int i=0 ;i<str1.Length;i++)
+        { 
+            if(str1.Count(c => c == str1[i])>1) 
+            {
+                 contr++;
+            }
+        } 
+        if(contr>1){
+             n=false;
+        }
+        else
+        {
+            n=true;
+        }
+        Console.Write(n);
+}
 //38
 /*
 ايجاد اطول كلمة بالسلسلة فرضت ان اول كلمة هي الاطول ثم حفظهتها بمتغير لأقرنها مع بقية الكلمات
@@ -247,6 +275,7 @@ static void Main(string[] args)
        Stringreversetolower();
        Centralcharacter();
        MaxandMinimalnumber();
+       Isograms();
 
     }
 }
