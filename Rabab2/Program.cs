@@ -6,7 +6,7 @@ public class Program
 
 //Q1
 /*
-حسب فهمي للسؤال يريد اذا نتيجة المقارنة متساوية نثبت ذلك 
+حسب فهمي للسؤال يريد اذا نتيجة المقارنة متساوية نثبت ذلك طبعت نتيجة المقارنتين فقط 
 */
 static void Demonstrate()
 {
@@ -85,6 +85,9 @@ static void Demonstrate()
         Console.WriteLine(Object.ReferenceEquals(str1, str2));
     }
 //Q15
+/*
+قارنت اخر حرف مع النقطة 
+*/
     static void Endsperiod()
     { 
         string str1 = "Actions speak louder than words";
