@@ -261,7 +261,11 @@
         Original string of numbers: 3 4 8 9 0 2 1
         Maximum and minimum number of the said string: 9, 0
         Original string of numbers: -2 -1 0 4 10
-        Maximum and minimum number of the said string: 10, -2*/
+        Maximum and minimum number of the said string: 10, -2
+        ----
+        To solve this task i'll take the string, remove the spaces then put all the numbers inside an 
+        array of integers. After that i'll print the max and min by using the bulit-in methods
+        */
         static void MaxMinFromSrting()
         {
             Console.WriteLine("Original string of numbers: ");
@@ -305,13 +309,75 @@
             else
                 Console.WriteLine($"({year})-> \"{centery}th century\"");
         }
+
+        /*33. Write a C# Sharp program to reverse a positive integer and add the reversed number to
+        the original number.
+        Sample Data:
+        (456) - > 456654
+        (-123) -> "Input a positive number."
+        ------
+        To solve this task, I'll take an integer from the user if the number is positive, i'll convert it to a string,
+        then I'll reverse the string and concatenate it with the original number, finally I'll print the result.
+        if the number is negative, I'll print a message to the user to input a positive number and that's it :)
+         */
+        static void ReverseInteger()
+        {
+            Console.Write("Enter a number to reverse: ");
+            //string number = Console.ReadLine();
+            int number = int.Parse(Console.ReadLine());
+            string StringNum = number.ToString();
+            string reversedNumber = "";
+
+            // if the number is positive
+            if (number >= 0)
+            {
+                for(int i = 0; i < StringNum.Length; i++)
+                    // store the reversed number in a string
+                    reversedNumber += StringNum[StringNum.Length - 1 - i];
+
+                Console.WriteLine($"({number}) ->  {StringNum + reversedNumber}");
+            }
+            else
+                Console.WriteLine("Input a positive number.");
+        }
+
+        /* Write a C# Sharp program to count a specific string (case sensitive) in given text.
+         -----
+        To solve this task, I'll take a text and a specific string(subString) from the user 
+        and then I'll count how many times the subString appears in the text then i'll keep track of the index
+        and when there's no more subString in the text, I'll print this results :)
+         */
+        static void CountSpecificString()
+        {
+            Console.Write("Enter the text: ");
+            string text = Console.ReadLine();
+            Console.Write("Enter the string to count: ");
+            string SubString = Console.ReadLine();
+
+            // to count the appearances of the sub string
+            int count = 0;
+            // to keep track of the index in the text
+            int index = 0;
+
+            // while the specific string is found in the text
+            while ((index = text.IndexOf(SubString, index)) != -1)
+            {
+                // Increment the count for each appearance
+                count++;
+                // Move the index forward to continue searching(to avoid counting the same substring again)
+                index += SubString.Length;
+            }
+            Console.WriteLine($"The string '{SubString}' appears {count} times in the text.");
+        }
         static void Main(string[] args)
         {
             //stringCopy();
             //isSubstring();
             while (true)
             {
-                CenturyOfYear();
+                CountSpecificString();
+                //ReverseInteger();
+                //CenturyOfYear();
                 //MaxMinFromSrting();
                 //StringMiddleCharacter();
                 //ReverseCase();

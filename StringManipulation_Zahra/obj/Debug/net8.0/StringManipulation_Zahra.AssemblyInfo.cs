@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StringManipulation_Zahra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ac444c45675ca8a2561d5432a268813fca1e5a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71e7a6c1bbcf6a8ccf8723690eb41b0148840e8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("StringManipulation_Zahra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StringManipulation_Zahra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
