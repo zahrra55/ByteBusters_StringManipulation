@@ -15,7 +15,7 @@
         and then I'll compare them again using ToUpper() to see if the results are the same
         finally, I'll print the results to the console وبس والله
         */
-        static void compareStrings()
+        static void CompareStrings()
         {
             Console.Write("Enter first string: ");
             string str1 = Console.ReadLine();
@@ -41,7 +41,7 @@
         ---
         I'll take three strings from the user and concatenate them using + operator then print the result
          */
-        static void concatenateStrings()
+        static void ConcatenateStrings()
         {
             // asking the user to enter three strings
             Console.Write("Enter first string: ");
@@ -66,7 +66,7 @@
         by using the string.Contains(substring) method if it finds it, then I'll find the position of the substring by using the string.IndexOf(substring) method
         and finally I'll print the results to the console :)
          */
-        static void isSubstring()
+        static void IsSubstring()
         {
             // NOTE: the solution can be dynamic by taking the strings from the user but for simplicity, I'll use the static way 
 
@@ -102,7 +102,7 @@
         then I'll use the string.Copy() to copy the value of s1 to s2,
         finally I'll print the values of both strings before and after the copy operation to show the difference
          */
-        static void stringCopy()
+        static void StringCopy()
         {
             Console.Write("Enter the first string:");
             string s1 = Console.ReadLine(); // "JAVA"
@@ -371,8 +371,8 @@
         }
         static void Main(string[] args)
         {
-            //stringCopy();
-            //isSubstring();
+            //StringCopy();
+            //IsSubstring();
             while (true)
             {
                 CountSpecificString();
@@ -383,8 +383,8 @@
                 //ReverseCase();
                 //ReverseStringUpper();
                 //EndsWithPeriod();
-                //concatenateStrings();
-                //compareStrings(); 
+                //ConcatenateStrings();
+                //CompareStrings(); 
 
                 Console.WriteLine();
             }
