@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Globalization;
-
+using System.Linq;
 public class Program
 {
 
@@ -129,6 +129,61 @@ static void Demonstrate()
         }
         Console.WriteLine(newstring);
     }
+//Q23
+/*
+قسمت طول السلسلة على 2 حتى احصل على اندكس  من خلاله استطيع الوصول الى رقم الحرف الوسط في السلسلة الفردية 
+وفي السلسة الزوجية نقصة قيمة الاندكس من الرقم الذ حصلت عليه لكي اصل الى الحرف الذي قبله
+
+*/
+    static void Centralcharacter()
+{
+        string str1 = "Rabab";
+        string str2 = "";
+        int n = (str1.Length) /2;
+        for(int i=0;i<str1.Length;i++)
+        {
+         if(str1.Length%2==0)
+         {
+            if(i==n)
+            {
+                  str2 += str1[i-1];
+                  str2 += str1[i];
+            } 
+         }
+         else
+            { 
+               if(i==n)
+              {
+                  str2 += str1[i];
+              } 
+            }
+        }
+        Console.Write(str2);
+}
+//24
+/*
+حولت السترينك الى مصفوفة لكي اصل الى الارقام ثم فرضة اول الرقم هو الرقم الاكبر ثم قارنته مع بقية العناصر 
+*/
+static void MaxandMinimalnumber()
+{
+string numbers = "10 20 70 40 50";
+string[] parts = numbers.Split(' ');
+int[] nums = Array.ConvertAll(parts, int.Parse);
+int max =nums[0];
+int minimal = nums[0];
+foreach (int n in nums)
+{
+    if(n>max)
+    {
+        max = n;
+    }
+    if(n<minimal)
+    {
+        minimal = n;
+    }
+    
+}Console.WriteLine(minimal+" "+max);
+}
 //38
 /*
 ايجاد اطول كلمة بالسلسلة فرضت ان اول كلمة هي الاطول ثم حفظهتها بمتغير لأقرنها مع بقية الكلمات
@@ -190,6 +245,8 @@ static void Main(string[] args)
        Century();
        ConvertsASCII();
        Stringreversetolower();
+       Centralcharacter();
+       MaxandMinimalnumber();
 
     }
 }
