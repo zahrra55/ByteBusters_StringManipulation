@@ -118,7 +118,7 @@ static void Demonstrate()
    static void Stringreversetolower()
     {
         string str = "Rabab";
-        string newstr="";
+        string newstring="";
         for(int i=0;i<str.Length;i++)
         {
             if(char.IsUpper(str[i]))
@@ -212,6 +212,68 @@ foreach (int n in nums)
         }
         Console.Write(n);
 }
+//Q27
+   static void PositionSpecifiedWord()
+    {
+        string str = "Rabab muhamad abdalkareem";
+        // string[] newstring ='';
+        string[] words = str.Split(' ');
+        int position =0;
+        foreach(string w in words)
+        {
+            position++;
+            Console.WriteLine("Position of the word {0} in the said string:{1} ",w,position);
+           
+        }
+        
+    }
+//Q28
+static string AlternateTheCase(string str)
+{
+    
+     string nstr = "";
+     for(int i=0;i<str.Length;i++)
+     {
+         if(i%2==0){
+                  nstr +=char.ToUpper(str[i]);
+         }
+        else
+        {
+             nstr +=char.ToLower(str[i]);
+        }
+     }
+     string[] words=nstr.Split(' ');
+     string nstr2 ="";
+     foreach(string w in words)
+     {
+         string newWord = char.ToUpper(w[0]) + w.Substring(1);
+            nstr2 += newWord + " ";
+     }
+     return nstr2;
+}
+//Q29
+/*
+حولت الجملة الى كلمات ثم بأستخدام اللوب عكست حروف الكلمات التي طولها عدد زوجي
+*/
+static string ReverseWordsEvenLength(string str)
+{
+    string[] words = str.Split(' ');
+    string reversed = "";
+      foreach(string w in words)
+      {  if(w.Length%2==0)
+      {
+           for (int i = w.Length - 1; i >= 0; i--)
+            {
+                reversed += w[i];
+            }
+      }
+      if(w.Length%2==1){
+          reversed +=w;  
+      }
+          reversed +=" ";
+         
+      }return reversed;
+}
 //38
 /*
 ايجاد اطول كلمة بالسلسلة فرضت ان اول كلمة هي الاطول ثم حفظهتها بمتغير لأقرنها مع بقية الكلمات
@@ -276,6 +338,8 @@ static void Main(string[] args)
        Centralcharacter();
        MaxandMinimalnumber();
        Isograms();
-
+       PositionSpecifiedWord();
+       Console.WriteLine(ReverseWordsEvenLength("C# is used to develop web apps , desktop apps , mobile apps , games and much more."));
+       Console.WriteLine(AlternateTheCase("C# is used to develop web apps , desktop apps , mobile apps , games and much more."));
     }
 }
